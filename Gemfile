@@ -12,6 +12,7 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
+gem 'json'
 
 gem 'sass-rails', '>= 6'
 gem 'simple_form'
