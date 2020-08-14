@@ -1,9 +1,7 @@
-<h2>All grogtails</h2>
-
-<p><% @cocktails.each do |cocktail| %></p>
-<%= link_to cocktail.name, cocktail_path(cocktail) %>
-<% end %>
-
-<hr>
-
-<%= link_to "Add a cocktail", new_cocktail_path %>
+<div class="container">
+  <p><% @cocktails.each do |cocktail| %></p>
+    <div class="card-index" style="background-image: url(<%= cocktail.banner_url %>")>
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+  <% end %>
+</div>

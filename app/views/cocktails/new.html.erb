@@ -1,6 +1,17 @@
-<h1>Add a cocktail</h1>
+<div class="form-container">
+  <div class="form-submit">
+    <h1>Add a grogtail</h1>
 
-<%= simple_form_for @cocktail do |f| %>
-<%= f.input :name %>
-<%= f.submit 'Submit your cocktail!' %>
-<% end %>
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.input :banner_url %>
+
+      <%= f.submit 'Submit your grogtail!' %>
+    <% end %>
+
+    <hr>
+
+    <%= link_to "Back to overview", root_path %>
+  </div>
+</div>
+
